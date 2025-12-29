@@ -33,8 +33,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/node-backend:latest
-            ${{ secrets.DOCKER_USERNAME }}/node-backend:sha-${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/aws-node-app-deployment:latest
+            ${{ secrets.DOCKER_USERNAME }}/aws-node-app-deployment:sha-${{ github.sha }}
 
       # - name: Deploy to EC2
       #   uses: appleboy/ssh-action@v1.0.0
