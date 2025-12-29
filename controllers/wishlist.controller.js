@@ -1,7 +1,7 @@
 const Wishlist = require("../models/Wishlist");
 
 /**
- * Get user's wishlist
+ * Get wishlist
  */
 exports.getWishlist = async (req, res) => {
   const wishlist = await Wishlist.findOne({ userId: req.user.id }).populate(
