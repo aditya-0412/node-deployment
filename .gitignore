@@ -2,3 +2,4 @@
 /dist
 .env
 node-key-pair.pem
+ignore
